@@ -9,7 +9,7 @@ metadata:
   hermes:
     tags: [WeChat, CSS, Theme, Wenyan, 微信公众号]
     category: wenyan-cli
-    related_skills: [wenyan-cli-wechat-theme-applier, wenyan-cli-wechat-publisher]
+    related_skills: [wenyan-cli-apply-wechat-custom-theme, wenyan-cli-publish-to-wechat]
 ---
 
 # 微信公众号自定义主题 CSS 生成器 (WeChat CSS Theme Generator)
@@ -22,7 +22,7 @@ metadata:
 - 用户描述视觉需求（如"赛博朋克风"、"带可爱表情的引用块"、"深色代码块"、"渐变标题"、"代码块行号"）
 - 需要生成符合 `#wenyan` 命名空间约束的 CSS 代码
 
-**不用于**：已有现成 CSS 只需应用和发布（用 `apply-wechat-custom-theme` 或 `publish-to-wechat`）
+**不用于**：已有现成 CSS 只需应用和发布（用 `wenyan-cli-apply-wechat-custom-theme` 或 `wenyan-cli-publish-to-wechat`）
 
 ## Output Contract
 
@@ -138,7 +138,7 @@ metadata:
    - [ ] 所有选择器以 `#wenyan` 开头（grep 验证，排除 `@media`/`@font-face` 等 at-rule）
    - [ ] 无明显 CSS 语法错误（如缺少分号、括号不匹配）
 5. **实测渲染验证（推荐）**：若环境已装 `wenyan`，用 `wenyan render -f <任一md> -c <生成的css>` 跑一次，确认退出码 0、输出 `<section id="wenyan">` 且自定义样式已注入（如标题颜色变化）。这一步能当场揪出选择器写错、语法错误等问题。
-6. **引导后续**：提示用户使用 `apply-wechat-custom-theme` 技能测试渲染 / 发布草稿
+6. **引导后续**：提示用户使用 `wenyan-cli-apply-wechat-custom-theme` 技能测试渲染 / 发布草稿
 
 ## 高级效果参考代码片段
 

@@ -9,7 +9,7 @@ metadata:
   hermes:
     tags: [WeChat, Wenyan, CSS, Theme, Publish, 微信公众号]
     category: wenyan-cli
-    related_skills: [generate-wechat-theme, publish-to-wechat]
+    related_skills: [wenyan-cli-generate-wechat-theme, wenyan-cli-publish-to-wechat]
 ---
 
 # 微信公众号自定义主题应用工具 (WeChat Custom Theme Applier)
@@ -22,7 +22,7 @@ metadata:
 - 用户已有自定义主题，要发布文章到微信公众号草稿箱
 - 用户希望将自定义主题注册到 `wenyan-cli` 主题库长期使用
 
-**不用于**：直接使用 wenyan-cli 内置主题发布（用 `publish-to-wechat`）
+**不用于**：直接使用 wenyan-cli 内置主题发布（用 `wenyan-cli-publish-to-wechat`）
 
 ## Prerequisites
 

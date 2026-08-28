@@ -9,7 +9,7 @@ metadata:
   hermes:
     tags: [WeChat, Wenyan, Publish, Markdown, 微信公众号]
     category: wenyan-cli
-    related_skills: [generate-wechat-theme, apply-wechat-custom-theme]
+    related_skills: [wenyan-cli-generate-wechat-theme, wenyan-cli-apply-wechat-custom-theme]
 ---
 
 # 微信公众号文章发布工具 (WeChat Publisher)
@@ -22,11 +22,11 @@ metadata:
 - 用户想使用 wenyan-cli 内置主题（如 `orangeheart`）进行排版
 - 用户需要自动上传 Markdown 中的本地/网络图片至微信素材库
 
-**不用于**：使用自定义 CSS 主题（用 `apply-wechat-custom-theme`）
+**不用于**：使用自定义 CSS 主题（用 `wenyan-cli-apply-wechat-custom-theme`）
 
 **选用逻辑**：
-- 有自定义 `.css` 文件 → 用 `apply-wechat-custom-theme`
-- 只想用内置主题 + 自动图片上传 → 用 `publish-to-wechat`（本技能）
+- 有自定义 `.css` 文件 → 用 `wenyan-cli-apply-wechat-custom-theme`
+- 只想用内置主题 + 自动图片上传 → 用 `wenyan-cli-publish-to-wechat`（本技能）
 
 ## Prerequisites
 
